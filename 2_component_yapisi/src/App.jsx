@@ -4,17 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Login from './login'
 import { users } from './login'
-function App() 
-{
-
+import Hello from './Hello'
+function App() {
   console.log(users);
-  
+
   return (
     <div>
-      <Login />
-
+      {/* <Login /> */}
+      <Hello />
     </div>
   )
 }
-
 export default App
