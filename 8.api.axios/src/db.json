@@ -3,22 +3,8 @@
     {
       "id": "1",
       "username": "Serhat",
-      "password": "xx"
-    },
-    {
-      "id": "2",
-      "username": "aaa",
-      "password": "x123x"
-    },
-    {
-      "id": "bcf3",
-      "username": "newuser",
-      "pasword": "newpassword"
-    },
-    {
-      "username": "Serhat yeni değer",
-      "password": 64564,
-      "id": "70fb"
+      "password": "xx",
+      "postId": "7"
     }
   ]
 }

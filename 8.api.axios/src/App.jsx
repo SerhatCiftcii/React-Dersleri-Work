@@ -10,11 +10,9 @@ function App() {
       await axios.get(BASE_URL + '/users');
     console.log(response.data)
   }
-  const getUserById = async (id) => {
+  /*const getUserById = async (id) => {
     const response = await axios.get(BASE_URL + '/users/' + id);
-    console.log(response.data)
-  }
-
+    console.log(response.data)*/
 
 
   const createuser = async (newUser) => {
@@ -31,6 +29,31 @@ function App() {
   const DeleteUserById = async (userId) => {
     await axios.delete(BASE_URL + '/users/' + userId);
     console.log("User deleted with ID:", userId);
+  }
+
+
+
+
+
+
+
+  // 2. farklı bir apiden yani jsonplaceholder fake apiden bu sefer veri çekcez asenkrom problem mantığı
+  //alt gr ; ile betik yapılır yukardakının diğeri yazmıyla yapıyorum aynı işi yapıyorlar
+
+  const getUserById = async (UserId) => {
+    const response = await axios.get(`${BASE_URL}/users/${UserId}`);
+    return response.data.postId;
+  }
+
+  const getPostById = async (postId) => {
+    const response = await axios.get(`https://jsonplaceholder.typicode.com/posts/${postId}`);
+    return response.data;
+  }
+
+  const getPost = async () => {
+    const postId = await getUserById(1);
+    const PostData = await getPostById(postId)
+    console.log(PostData)
   }
 
   useEffect(() => {
@@ -51,6 +74,10 @@ function App() {
     //delete işlemi
     //  9b43 id'sine sahip kullanıcıyı sil
     /* DeleteUserById("9b43")*/
+
+
+    getPost(); //post verisini çekme
+
   }, [])
 
 
