@@ -1,0 +1,47 @@
+.header {
+  position: fixed;
+  /* Header'ı sayfanın üstünde sabitler */
+  top: 0;
+  /* En üstte konumlandırır */
+  left: 0;
+  /* Sol kenardan başlar */
+  width: 100%;
+  /* Tam genişlik */
+  height: 60px;
+  /* Biraz daha yüksek */
+  z-index: 1000;
+  /* Diğer elementlerin üzerinde durur */
+  box-sizing: border-box;
+  /* Padding'i genişliğe dahil et */
+
+  display: flex;
+  /* Flexbox düzeni */
+  align-items: center;
+  /* İçeriği dikey ortalar */
+  justify-content: space-between;
+  /* Elementler arası boşluk */
+  padding: 0 20px;
+  /* Sağ-sol iç boşluk */
+
+  background-color: #fff;
+  /* Beyaz arka plan */
+  border-bottom: 1px solid #eee;
+  /* Alt kenar çizgisi */
+  overflow: hidden;
+  /* Taşan içeriği gizle */
+}
+
+/* Body'ye padding ekleyerek header'ın içeriği kapatmasını önle */
+body {
+  padding-top: 60px;
+  /* Header yüksekliği kadar boşluk */
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  font-family: arial;
+  font-weight: 300;
+  margin: 0 10px;
+  color: #070000
+}
