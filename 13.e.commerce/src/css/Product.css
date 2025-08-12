@@ -1,0 +1,38 @@
+.image {
+    width: 180px;
+    height: 240px;
+}
+
+.card {
+    width: 200px;
+    height: 425px;
+    box-shadow: 1px 4px lightgray;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.card:hover {
+    box-shadow: 1px 6px 3px rgb(202, 198, 206);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.detail-button {
+    background: linear-gradient(90deg, #000000 0%, #b224ef 100%);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(109, 23, 179, 0.15);
+    transition: background 0.3s, transform 0.2s;
+    outline: none;
+}
+
+.detail-button:hover {
+    background: linear-gradient(90deg, #d48383 0%, #b4b0b8 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(109, 23, 179, 0.25);
+    cursor: pointer;
+}
