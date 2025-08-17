@@ -1,0 +1,56 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-create {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.todo-input {
+  width: 99%;
+  padding: 5px 2px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ff7f50;
+  /* coral rengi */
+  background-color: #f9f9f9;
+  border-radius: 4px 4px 0 0;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-input:focus {
+  border-bottom-color: #ff6347;
+  /* daha koyu coral */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.todo-button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: gold;
+  font-weight: 800;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.icons {
+  font-size: 22px;
+  cursor: pointer;
+
+}
